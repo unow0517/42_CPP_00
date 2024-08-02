@@ -49,3 +49,9 @@ int main() {
 ## Important
 
 header file with the extension ***.hpp*** is specifically for cpp. ***.h*** is compatable in C and C++.
+
+* **Ampersand(&)**
+  
+  In C++, **&** in the function signature denotes a reference, which allows you to work directly with the original object and make changes if needed.
+In C, **&** is used to get the address of a variable, and to modify data, you pass pointers to the function.
+So while the & symbol in function signatures in C++ and C serves different roles, the concept of passing data to a function without copying it (through references in C++ or pointers in C) is similar in both languages.
