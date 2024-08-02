@@ -21,7 +21,7 @@ terminate a statement with semicolon like in C.
 
 * **Namespace**
 
-	A namespace is a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc.) inside it. Namespaces are used to organize code into logical groups and to prevent name collisions that can occur especially when your code base includes multiple libraries.
+	A namespace is a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc.) inside it. Namespaces are used to organize code into logical groups and **to prevent name collisions that can occur especially when your code base includes multiple libraries**.
 
 * **Class**
   
@@ -53,5 +53,6 @@ header file with the extension ***.hpp*** is specifically for cpp. ***.h*** is c
 * **Ampersand(&)**
   
   In C++, **&** in the function signature denotes a reference, which allows you to work directly with the original object and make changes if needed.
-In C, **&** is used to get the address of a variable, and to modify data, you pass pointers to the function.
+
+  In C, **&** is used to get the address of a variable, and to modify data, you pass pointers to the function.
 So while the & symbol in function signatures in C++ and C serves different roles, the concept of passing data to a function without copying it (through references in C++ or pointers in C) is similar in both languages.
