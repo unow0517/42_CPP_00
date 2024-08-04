@@ -1,8 +1,36 @@
 # CPP
-C with classes
+C with classes, finally Object-Oriented-Programming, even I did not understand it clearly
 
 ## Tutorial
 * **Class** : In order to describe the real world entity, we need two things: characteristics and functions. A class is a mechanism of binding these two methods in a single unit.
+```c++
+class MyClass
+{
+	Access_Specifier;
+	Data Members;
+	myfunc //Member Functions()
+	{
+	//body
+	}
+}
+```
+
+* **Object** : An object can be defined as an instance ofa class. No memory is allocated when we define a class. When an object is created then memory is allocated. *Syntax: Class_name Obj_name;*
+```c++
+MyClass myObj;
+```
+* **Member Functions** : Any function that is declared as part of class. It is invoked by sending messages to an instance of class. The dot(.) operator is used to access public members of a class.
+```c++
+MyClass myObj;
+
+myObj.myfunc();
+```
+
+* **Constructor** : A special type of member function of a class that is called automatically whenever an object is created
+
+<br/>
+In C++, the `::` symbol is called the **scope resolution operator**. It is used to define the context in which a name is defined, which can be particularly useful for specifying which class or namespace an identifier belongs to. After **scope resolution operator** you can use the features in the namespace or class. `cout` = character out. Terminate a statement with semicolon like in C.<br/>
+
 ```c++
 #include <iostream>
 
@@ -13,12 +41,6 @@ int main()
 }
 ```
 
-In C++, the `::` symbol is called the **scope resolution operator**. It is used to define the context in which a name is defined, which can be particularly useful for specifying which class or namespace an identifier belongs to. After **scope resolution operator** you can use the features in the namespace or class.
-
-`cout` = character out
-
-terminate a statement with semicolon like in C.
-
 * **Namespace**
 
 	A namespace is a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc.) inside it. Namespaces are used to organize code into logical groups and **to prevent name collisions that can occur especially when your code base includes multiple libraries**.
@@ -27,7 +49,7 @@ terminate a statement with semicolon like in C.
   
   A class is a user-defined data type that we can use in our program, and it works as an object constructor, or a "blueprint" for creating objects.
 
-* **Access specifiers** define how the members (attributes and methods) of a class can be accessed. In the example above, the members are public - which means that they can be accessed and modified from outside the code.
+* **Access specifiers** define how the members (attributes and methods) of a class can be accessed. In the example below, the members are public - which means that they can be accessed and modified from outside the class. *Private* = Accessed only from within the class. *Protected*-accessed from inside and outsied of class with the help of friend function(?).
   
 ```c++
 class MyClass {
@@ -59,3 +81,6 @@ header file with the extension ***.hpp*** is specifically for cpp. ***.h*** is c
 
   In C, **&** is used to get the address of a variable, and to modify data, you pass pointers to the function.
 So while the & symbol in function signatures in C++ and C serves different roles, the concept of passing data to a function without copying it (through references in C++ or pointers in C) is similar in both languages.
+
+## References 
+https://www.youtube.com/watch?v=vIcOhM_Vkc4
