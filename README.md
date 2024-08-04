@@ -2,7 +2,7 @@
 C with classes
 
 ## Tutorial
-
+* **Class** : In order to describe the real world entity, we need two things: characteristics and functions. A class is a mechanism of binding these two methods in a single unit.
 ```c++
 #include <iostream>
 
@@ -45,6 +45,9 @@ int main() {
 }
 ```
 
+* **static elements in class**
+  
+  In C++, static member functions belong to the class rather than to any particular object instance of the class. This means they can be called without an object of the class. **Static member functions can access static data members and other static member functions but cannot access non-static members directly**. 
 
 ## Important
 
