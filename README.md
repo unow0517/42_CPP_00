@@ -99,5 +99,8 @@ header file with the extension ***.hpp*** is specifically for cpp. ***.h*** is c
   In C, **&** is used to get the address of a variable, and to modify data, you pass pointers to the function.
 So while the & symbol in function signatures in C++ and C serves different roles, the concept of passing data to a function without copying it (through references in C++ or pointers in C) is similar in both languages.
 
+* **Stack** VS **Heap**
+  **Stack** : a region of static memory allocation. Region for local variables, paramters in a function, life-time is limited to the scope they are defined. Faster due to LIFO(Last In First Out).
+  **Heap** : a region for dynamically allocated memory. With keyword `new`, `delete` in C++, or `malloc`, `free` in C. Slower than Stack. Much more space available than stack.
 ## References 
 https://www.youtube.com/watch?v=vIcOhM_Vkc4
