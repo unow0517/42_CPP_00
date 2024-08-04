@@ -1,7 +1,10 @@
 # CPP
-C with classes, finally Object-Oriented-Programming, even I did not understand it clearly
+C with classes, finally Object-Oriented-Programming.
+
+* **Object Oriented Programming** : Object-Oriented Programming (OOP) is a programming paradigm that **uses objects and classes to organize and structure code**. It models real-world entities and their interactions, allowing for more modular, reusable, and maintainable code.
 
 ## Tutorial
+
 * **Class** : In order to describe the real world entity, we need two things: characteristics and functions. A class is a mechanism of binding these two methods in a single unit.
 ```c++
 class MyClass
@@ -26,9 +29,22 @@ MyClass myObj;
 myObj.myfunc();
 ```
 
-* **Constructor** : A special type of member function of a class that is called automatically whenever an object is created
+* **Constructor** : A special type of member function of a class that is called automatically whenever an object is created. Can be either parameterized or not. Must be same name as class name. 
+```c++
+MyClass(arguments);
+//or
+MyClass(void);
+```
+
+* **Destructor** : A special member function that destorys the object as soon as the scope of the object ends.
+```c++
+~MyClass(void);
+```
+
+**Are Const. Dest. MUST-TO-HAVE IN A CLASS?** No, compiler provides default Const. Dest. unless it is provided.
 
 <br/>
+
 In C++, the `::` symbol is called the **scope resolution operator**. It is used to define the context in which a name is defined, which can be particularly useful for specifying which class or namespace an identifier belongs to. After **scope resolution operator** you can use the features in the namespace or class. `cout` = character out. Terminate a statement with semicolon like in C.<br/>
 
 ```c++
@@ -49,7 +65,8 @@ int main()
   
   A class is a user-defined data type that we can use in our program, and it works as an object constructor, or a "blueprint" for creating objects.
 
-* **Access specifiers** define how the members (attributes and methods) of a class can be accessed. In the example below, the members are public - which means that they can be accessed and modified from outside the class. *Private* = Accessed only from within the class. *Protected*-accessed from inside and outsied of class with the help of friend function(?).
+* **Access specifiers**
+  define how the members (attributes and methods) of a class can be accessed. In the example below, the members are ***public*** - which means that they can be accessed and modified from outside the class. ***Private*** = Accessed only from within the class, by function for example. ***Protected***-accessed from inside and outsied of class with the help of friend function(?).
   
 ```c++
 class MyClass {
