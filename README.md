@@ -22,6 +22,8 @@ class MyClass
 ```c++
 MyClass myObj;
 ```
+* **Instance** : Another term for an object, highlighting that it is a specific occurrence of a class.
+
 * **Member Functions** : Any function that is declared as part of class. It is invoked by sending messages to an instance of class. The dot(.) operator is used to access public members of a class.
 ```c++
 MyClass myObj;
